@@ -1,0 +1,155 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;  /* Uniform background color */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    ;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;  /* Center the content */
+    background: #fff;  /* White background for main content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Event list styles */
+.event {
+    background: linear-gradient(135deg, #2882ff, #7effe1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+
+.event:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event h2 {
+    color: rgb(255, 255, 255);
+}
+
+/* Event details styles */
+#event-details {
+    background: #fff;  /* White background for details box */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+#event-details h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#event-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#event-details ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#event-details ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+#event-details a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+#event-details a:hover {
+    background: linear-gradient(135deg, #f5576c, #f093fb);
+}
+
+/* Registration form styles */
+form {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #f5576c;
+}
+
+form button {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #f5576c, #f093fb);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+}
